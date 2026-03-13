@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+
+      <form id="todo-form" class="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          class="todo-input"
+          placeholder="Add a new task..."
+          maxlength="200"
+          autocomplete="off"
+        />
+        <button type="submit" id="add-btn" class="btn btn-add">Add</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <p id="empty-msg" class="empty-msg">No tasks yet. Add one above!</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
